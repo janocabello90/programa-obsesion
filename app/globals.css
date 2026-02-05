@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #001f3f;
+  --gold: #D4AF37;
+  --red: #dc2626;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ocultar scrollbar en carruseles */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
