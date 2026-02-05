@@ -1,4 +1,5 @@
 'use client'
+import Header from '@/components/Header'
 import Hero from '@/components/activa/Hero'
 import StickyCTA from '@/components/activa/StickyCTA'
 import StatsStrip from '@/components/activa/StatsStrip'
@@ -21,6 +22,7 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen bg-white pb-20 md:pb-28">
+      <Header />
       <StickyCTA />
       
       <Hero />
@@ -381,9 +383,14 @@ export default function Home() {
       {/* SECTION 5 — BECA GIVEAWAY */}
       <section className="py-24 px-4 bg-gold/5 border-t border-gold/20">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-navy">
-            Aplicar tiene premio (aunque no ganes la beca)
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-navy flex items-center justify-center gap-4">
+            <span className="text-5xl md:text-6xl">🎁</span>
+            Aplicar tiene premio
+            <span className="text-5xl md:text-6xl">🎁</span>
           </h2>
+          <p className="text-xl md:text-2xl text-center mb-12 text-gold">
+            Aunque no ganes la beca
+          </p>
 
           {/* Card central destacada */}
           <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg border-2 border-gold/30 mb-12">
@@ -394,8 +401,8 @@ export default function Home() {
               </h3>
               <div className="grid md:grid-cols-3 gap-8">
                 {/* Paso 1 */}
-                <div className="text-center">
-                  <div className="inline-block bg-gold text-navy w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mb-4">
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-gold text-navy w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mb-4">
                     1
                   </div>
                   <h4 className="text-xl font-bold mb-3 text-navy">Aplicas</h4>
@@ -405,8 +412,8 @@ export default function Home() {
                 </div>
 
                 {/* Paso 2 */}
-                <div className="text-center">
-                  <div className="inline-block bg-gold text-navy w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mb-4">
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-gold text-navy w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mb-4">
                     2
                   </div>
                   <h4 className="text-xl font-bold mb-3 text-navy">Elegimos 1 beca</h4>
@@ -416,8 +423,8 @@ export default function Home() {
                 </div>
 
                 {/* Paso 3 */}
-                <div className="text-center">
-                  <div className="inline-block bg-gold text-navy w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mb-4">
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-gold text-navy w-16 h-16 rounded-full flex items-center justify-center text-3xl font-bold mb-4">
                     3
                   </div>
                   <h4 className="text-xl font-bold mb-3 text-navy">Todos reciben respuesta</h4>
@@ -500,7 +507,7 @@ export default function Home() {
       <section id="acceso" className="py-24 px-4 bg-white border-t border-gray-200">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-navy">
-            Acceso a ACTIVA
+            Cuánto vale el PROGRAMA ACTIVA
           </h2>
 
           {/* Card central con información de precio */}
@@ -518,7 +525,7 @@ export default function Home() {
             {/* Precio lanzamiento - Blurred */}
             <div className="text-center mb-8 pb-8 border-b border-gray-200 relative">
               <p className="text-lg md:text-xl text-gray-700 mb-2">
-                Lanzamiento mayo
+                PRECIO LANZAMIENTO
               </p>
               
               {/* Bloque desenfocado con overlay */}
@@ -537,7 +544,7 @@ export default function Home() {
                     <div className="text-center">
                       <span className="text-xl md:text-2xl font-bold text-slate-500 select-none flex items-center gap-2">
                         <span>🔒</span>
-                        <span>PRECIO DE LANZAMIENTO</span>
+                        <span>DESVELAMOS EN MAYO</span>
                       </span>
                     </div>
                   </div>
@@ -581,8 +588,8 @@ export default function Home() {
               Cómo funciona el acceso
             </h3>
             <div className="grid md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="inline-block bg-navy text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-navy text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
                   1
                 </div>
                 <h4 className="font-bold mb-2 text-navy">Aplicar</h4>
@@ -591,8 +598,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="inline-block bg-navy text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-navy text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
                   2
                 </div>
                 <h4 className="font-bold mb-2 text-navy">Revisión</h4>
@@ -601,8 +608,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="inline-block bg-navy text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-navy text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
                   3
                 </div>
                 <h4 className="font-bold mb-2 text-navy">Resolución</h4>
@@ -611,8 +618,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="inline-block bg-navy text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
+              <div className="flex flex-col items-center text-center">
+                <div className="bg-navy text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
                   4
                 </div>
                 <h4 className="font-bold mb-2 text-navy">Confirmación</h4>

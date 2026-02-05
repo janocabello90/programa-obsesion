@@ -3,11 +3,10 @@ interface Stat {
   label: string
 }
 
-// TODO: Actualizar con métricas reales
 const stats: Stat[] = [
-  { value: '+X', label: 'clínicas' },
-  { value: '+Y', label: 'alumnos' },
-  { value: 'Z%', label: 'recomendación' },
+  { value: '150', label: 'clínicas' },
+  { value: '300', label: 'alumnos' },
+  { value: '90%', label: 'recomendación' },
 ]
 
 export default function StatsStrip() {
